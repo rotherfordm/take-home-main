@@ -48,6 +48,7 @@ services:
       - NODE_ENV=development
       - DB_CONNECTION_URI=postgres://symph:symph@db/symph?sslmode=disable
       - TELEMETRY_ENABLED=false
+      - BACKEND_URL=http://localhost:8000
     volumes:
       - ./server/src:/app/src
     extra_hosts:
